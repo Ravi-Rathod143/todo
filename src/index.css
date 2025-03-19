@@ -1,0 +1,144 @@
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  /* background-color: black; */
+}
+
+
+header{
+  color: rgb(214, 150, 252);
+  margin-bottom: 1.4rem;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.todo-container {
+  width: 450px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.add-task-container {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.add-input {
+  width: 90%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  /* border-color: aqua; */
+}
+/* .add-input{
+} */
+
+.edit-btn{
+  margin-right: 1rem;
+  cursor: pointer;
+  padding:3px 11px;
+  background: linear-gradient(135deg, #ff9800, #e65100);
+  color: white;
+  /* border-radius: 10px; */
+  /* width: 0%; */
+}
+.edit-btn:hover{
+  /* background-color: aqua;
+  border-color: aqua; */
+  background: linear-gradient(135deg, #e68900, #bf360c);
+  transform: scale(1.1);
+}
+
+.delete-btn{
+  margin-right: 1rem;
+  cursor: pointer;
+  padding:3px 11px;
+
+  
+  /* border-radius: 10px; */
+  /* width: 0%; */
+}
+.delete-btn:hover{
+  background-color: aqua;
+  border-color: aqua;
+  
+}
+
+.add-btn {
+  border: none;
+  padding: 10px 25px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.1s ease-in-out;
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 6px;
+  background-color: rgb(105, 105, 214);
+  color: azure;
+  
+}
+
+.add-btn:hover{
+  background-color: aliceblue;
+  color: #e68900;
+}
+
+.task-container {
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.no-tasks{
+  color: rgb(68, 54, 68);
+  text-align: center;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.edit-btn, .delete-btn {
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
