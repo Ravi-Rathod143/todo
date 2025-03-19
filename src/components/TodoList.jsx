@@ -1,4 +1,4 @@
-import ToDoItem from "./ToDoItem";
+import ToDoItem from "./TodoItem";
 
 const ToDoList = ({ todos, toggleComplete, deleteTodo, startEdit }) => {
   return (
