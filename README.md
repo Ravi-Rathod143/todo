@@ -22,7 +22,8 @@ It allows users to **add, edit, delete, and mark tasks as completed** efficientl
 git clone https://github.com/Ravi-Rathod143/todo.git
 
 ```sh
-https://todoso.netlify.app/
+## Live Demo 🚀
+[Click here to view the app](https://todoso.netlify.app/)
 
  Navigate to the Project Folder
     cd todo-app
