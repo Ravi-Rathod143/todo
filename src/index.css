@@ -86,6 +86,20 @@ header{
   
 }
 
+.mark{
+  margin-right: 1rem;
+  cursor: pointer;
+  padding:3px 11px;
+
+
+}
+.mark:hover{
+  background-color: rgb(29, 36, 36);
+  border-color: aqua;
+  color: aliceblue;
+  
+}
+
 .add-btn {
   border: none;
   padding: 10px 25px;
@@ -141,4 +155,34 @@ header{
   margin-left: 5px;
   font-size: 14px;
   font-weight: bold;
+}
+
+
+
+
+.mark {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: none;
+}
+
+.mark.completed {
+  background-color: #22c55e; /* Green */
+  color: white;
+}
+
+.mark.completed:hover {
+  background-color: #16a34a; /* Dark Green */
+}
+
+.mark.incomplete {
+  background-color: #3b82f6; /* Blue */
+  color: white;
+}
+
+.mark.incomplete:hover {
+  background-color: #2563eb; /* Dark Blue */
 }
