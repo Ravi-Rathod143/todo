@@ -4,7 +4,7 @@ const ToDoItem = ({ todo, toggleComplete, deleteTodo, startEdit }) => {
       <span>{todo.text}</span>
       <div className="flex gap-3">
       <button onClick={() => toggleComplete(todo.id)} className="mark">
-          {todo.completed ? "Undo" : "Complete"}
+          {todo.completed ? "done" : "Mark as done"}
         </button>
 
         <button onClick={() => startEdit(todo)} className="edit-btn">✏️</button>
