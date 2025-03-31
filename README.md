@@ -23,7 +23,9 @@ git clone https://github.com/Ravi-Rathod143/todo.git
 
 ```sh
 ## Live Demo 🚀
-[Click here to view the app](https://todoso.netlify.app/)
+[Click here to view the app]
+```sh
+https://todoheeee.netlify.app/
 
  Navigate to the Project Folder
     cd todo-app
