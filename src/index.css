@@ -186,3 +186,55 @@ header{
 .mark.incomplete:hover {
   background-color: #2563eb; /* Dark Blue */
 }
+
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .todo-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .todo-item {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .add-input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .add-btn, .edit-btn, .delete-btn, .mark {
+    font-size: 12px;
+    padding: 8px;
+    display: flex;
+    /* flex-direction: column; */
+  }
+}
+
+/* Button Hover Enhancements */
+.add-btn:hover,
+.edit-btn:hover,
+.delete-btn:hover,
+.mark:hover {
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+/* Task List Readability */
+.todo-item {
+  line-height: 1.5;
+  padding: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Improved Task Completion Effect */
+.todo-item.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+

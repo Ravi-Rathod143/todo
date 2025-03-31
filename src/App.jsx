@@ -9,21 +9,22 @@ const App = () => {
   const [newTodo, setNewTodo] = useState("");
   const [editTodo, setEditTodo] = useState(null);
 
-  const addTodo = () => {
-    if (newTodo.trim()) {
-      if (editTodo) {
-        setTodos(
-          todos.map((todo) =>
-            todo.id === editTodo.id ? { ...todo, text: newTodo } : todo
-          )
-        );
-        setEditTodo(null);
-      } else {
-        setTodos([...todos, { id: Date.now(), text: newTodo, completed: false }]);
-      }
-      setNewTodo("");
+ const addTodo = () => {
+  if (newTodo.trim()) {
+    if (editTodo) {
+      setTodos(
+        todos.map((todo) =>
+          todo.id === editTodo.id ? { ...todo, text: newTodo } : todo
+        )
+      );
+      setEditTodo(null);
+    } else {
+      const newId = todos.length > 0 ? Math.max(...todos.map(todo => todo.id)) + 1 : 1;
+      setTodos([...todos, { id: newId, text: newTodo, completed: false }]);
     }
-  };
+    setNewTodo("");
+  }
+};
 
   const toggleComplete = (id) => {
     setTodos(
